@@ -52,6 +52,7 @@
             <id>repo</id>
             <url>https://github.com/naamannewbold/repo/raw/master/releases</url>
         </repository>
+
     </distributionManagement>
     <dependencies>
         <!-- cometd -->
@@ -150,16 +151,19 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
             <version>${eclipse.jetty.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
             <version>${eclipse.jetty.version}</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- Logging -->
